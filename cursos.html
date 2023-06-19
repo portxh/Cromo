@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos</title>
+    <link rel="shortcut icon" href="img/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/cursos.css">
+    <link rel="stylesheet" href="css/header.css">
+</head>
+
+<body>
+    <!-- Cabecalho -->
+    <header>
+        <nav class="navbar">
+            <ul class="menu-list">
+                <li><a href="index.html"><img src="./img/logo-maneira.png" alt="Logo Cromo"></a></li>
+                <li><a href="infraestrutura.html">Infraestrutura</a></li>
+                <li><a href="funcionario.html">Funcionários</a></li>
+                <li><a style="border-top: 1px solid white;border-bottom: 1px solid white;" href="cursos.html">Cursos</a></li>
+            </ul>
+        </nav>
+        <nav class="navbar-mobile">
+            <a href="index.html"><img src="./img/logo-maneira.png" alt="Logo Cromo"></a>
+            <div class="dropdown">
+                <button class="dropbtn">Galeria</button>
+                <div class="dropdown-content">
+                    <a href="infraestrutura.html">Infraestrutura</a>
+                    <a href="funcionario.html">Funcionários</a>
+                    <a href="cursos.html">Cursos</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Fim cabecalho -->
+    <section id="cursos" class="cursos">
+        <div class="texto-cursos">
+            <h1>Cursos</h1>
+            <p>A trindade do Senai Informática; os cursos técnicos da escola, escolha aquele no qual se sentir mais
+                conectado, sendo eles: Desenvolvimento de Sistemas, Redes de Computadores e Multimídia; e aproveite a
+                infraestrutura própria e personalizada destinada ao curso. Mas calma lá, não é só isso, há também os
+                cursos FIC (Formação Inicial e Continuada) que são livres e breves para uma formação rápida voltada a
+                uma especificidade do mercado de trabalho.</p>
+        </div>
+        <div class="seta-baixo">
+            <a href="#mosaico">
+                <img src="./img/DownArrow.svg" alt="">
+            </a>
+        </div>
+        <a href="#cursos" class="up"> <img src="./img/DownArrow.svg" alt="subir"></a>
+
+    </section>
+    <!-- Mosaico -->
+    <section id="mosaico" class="mosaico">
+        <div class="mosaico-imagens">
+
+            <!-- Imagens grandes com numeracao -->
+            <div class="slide">
+                <div class="numeracao">1 / 6</div>
+                    <img src="img/4.png" alt="Professor e Aluno de Dev">
+            </div>
+            <div class="slide">
+                <div class="numeracao">2 / 6</div>
+                    <img src="img/5.png" alt="Aluno em Atividade de Multimídia">
+            </div>
+            <div class="slide">
+                <div class="numeracao">3 / 6</div>
+                    <img src="img/6.png" alt="Aluno em Atividade de Redes">
+            </div>
+            <div class="slide">
+                <div class="numeracao">4 / 6</div>
+                    <img src="img/7.png" alt="Alunas de Multimídia fotografando">
+            </div>
+            <div class="slide">
+                <div class="numeracao">5 / 6</div>
+                    <img src="img/8.png" alt="Aluno de Multimídia fotografando">
+            </div>
+            <div class="slide">
+                <div class="numeracao">6 / 6</div>
+                    <img src="img/10.png" alt="Aluna de Dev">
+            </div>
+            <!-- Fim imagens grandes com numeracao -->
+
+            <!-- botoes avancar e voltar -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+            <a class="next" onclick="plusSlides(1)">&#10095</a>
+            <!-- botoes avancar e voltar -->
+
+            <div class="container-captacao">
+                <p id="captacao"></p>
+            </div>
+
+            <!-- linha de imagens -->
+            <div class="linha">
+                <div class="coluna">
+                    <img class="demo cursor" src="img/4.png" style="width: 100%;" onclick="currentSlide(1)" alt="Professor e Aluno de Dev">
+                </div>
+                <div class="coluna">
+                    <img class="demo cursor" src="img/5.png" style="width: 100%;" onclick="currentSlide(2)" alt="Aluno em Atividade de Multimídia">
+                </div>
+                <div class="coluna">
+                    <img class="demo cursor" src="img/6.png" style="width: 100%;" onclick="currentSlide(3)" alt="Aluno de Redes de Computadores">
+                </div>
+                <div class="coluna">
+                    <img class="demo cursor" src="img/7.png" style="width: 100%;" onclick="currentSlide(4)" alt="Alunas de Multimídia Fotografando">
+                </div>
+                <div class="coluna">
+                    <img class="demo cursor" src="img/8.png" style="width: 100%;" onclick="currentSlide(5)" alt="Aluno de Multimídia Fotografando">
+                </div>
+                <div class="coluna">
+                    <img class="demo cursor" src="img/10.png" style="width: 100%;" onclick="currentSlide(6)" alt="Aluna de DEV">
+                </div>
+            </div>
+            <div class="clear"></div>
+            <!-- fim linha de imagens -->
+        </div>
+    </section>
+    <!-- Fim mosaico -->
+    <footer>
+        <p>TODOS OS DIREITOS RESERVADOS © CROMO 2021</p>
+    </footer>
+</body>
+
+<script src="js/jquery.js"></script>
+<script src="js/galeria.js"></script>
+
+</html>

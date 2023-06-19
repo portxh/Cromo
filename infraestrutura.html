@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infraestrutura</title>
+    <link rel="shortcut icon" href="img/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/infraestrutura.css">
+    <link rel="stylesheet" href="css/header.css">
+</head>
+
+<body>
+    <!-- Cabecalho -->
+    <header>
+        <nav class="navbar">
+            <ul class="menu-list">
+                <li><a href="index.html"><img src="./img/logo-maneira.png" alt="Logo Cromo"></a></li>
+                <li><a style="border-top: 1px solid white;border-bottom: 1px solid white;" href="infraestrutura.html">Infraestrutura</a></li>
+                <li><a href="funcionario.html">Funcionários</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+            </ul>
+        </nav>
+        <nav class="navbar-mobile">
+            <a href="index.html"><img src="./img/logo-maneira.png" alt="Logo Cromo"></a>
+            <div class="dropdown">
+                <button class="dropbtn">Galeria</button>
+                <div class="dropdown-content">
+                    <a href="infraestrutura.html">Infraestrutura</a>
+                    <a href="funcionario.html">Funcionários</a>
+                    <a href="cursos.html">Cursos</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Fim cabecalho -->
+    <!-- Infraestrutura -->
+    <section id="infra" class="infraestrutura">
+        <div class="texto-infraestrutura">
+            <h1>Infraestrutura</h1>
+            <p> Com um ambiente agradável e até mesmo “descontraído”, o SENAI Informática oferece uma infraestrutura
+                tecnológica, jovem e confortável, tanto para os momentos recreativos, quanto para os próprios estudos,
+                havendo assim uma sensação de conexão com o lugar.
+            </p>
+        </div>
+        <div class="seta-baixo">
+            <a href="#mosaico">
+                <img src="./img/DownArrow.svg" alt="">
+            </a>
+        </div>
+        <a href="#infra" class="up"> <img src="./img/DownArrow.svg" alt="subir"></a>
+    </section>
+    <!-- Fim Infraestrutura -->
+
+    <!-- Mosaico -->
+    <section id="mosaico" class="mosaico">
+        <div class="mosaico-imagens">
+
+            <!-- Imagens grandes com numeracao -->
+            <div class="slide">
+                <div class="numeracao">1 / 6</div>
+                    <img src="img/11.png" alt="Material do Curso de Redes de Computadores">
+            </div>
+            <div class="slide">
+                <div class="numeracao">2 / 6</div>
+                    <img src="img/12.png" alt="Sala de CyberCeguranca">
+            </div>
+            <div class="slide">
+                <div class="numeracao">3 / 6</div>
+                    <img src="img/13.png" alt="Sala de Aula">
+            </div>
+            <div class="slide">
+                <div class="numeracao">4 / 6</div>
+                    <img src="img/14.png" alt="Sala de Reunião">
+            </div>
+            <div class="slide">
+                <div class="numeracao">5 / 6</div>
+                    <img src="img/15.png" alt="Refeitório da Escola">
+            </div>
+            <div class="slide">
+                <div class="numeracao">6 / 6</div>
+                    <img src="img/17.png" alt="Bancada com equipamentos de manutenção de hardware">
+            </div>
+            <!-- Fim imagens grandes com numeracao -->
+
+            <!-- botoes avancar e voltar -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+            <a class="next" onclick="plusSlides(1)">&#10095</a>
+            <!-- botoes avancar e voltar -->
+
+            <div class="container-captacao">
+                <p id="captacao"></p>
+            </div>
+
+            <!-- linha de imagens -->
+            <div class="linha">
+                <div class="coluna">
+                    <img class="demo cursor" src="img/11.png" style="width: 100%;" onclick="currentSlide(1)" alt="Material do Curso de Redes de Computadores">
+                </div>
+                <div class="coluna">
+                    <img class="demo cursor" src="img/12.png" style="width: 100%;" onclick="currentSlide(2)" alt="Sala de CyberCeguranca">
+                </div>
+                <div class="coluna">
+                    <img class="demo cursor" src="img/13.png" style="width: 100%;" onclick="currentSlide(3)" alt="Sala de Aula">
+                </div>
+                <div class="coluna">
+                    <img class="demo cursor" src="img/14.png" style="width: 100%;" onclick="currentSlide(4)" alt="Sala de Reunião">
+                </div>
+                <div class="coluna">
+                    <img class="demo cursor" src="img/15.png" style="width: 100%;" onclick="currentSlide(5)" alt="Refeitório">
+                </div>
+                <div class="coluna">
+                    <img class="demo cursor" src="img/17.png" style="width: 100%;" onclick="currentSlide(6)" alt="Sala de Manutencão de Hardware">
+                </div>
+            </div>
+            <div class="clear"></div>
+            <!-- fim linha de imagens -->
+        </div>
+    </section>
+    <!-- Fim mosaico -->
+    <!-- Rodape -->
+    <footer>
+        <p>TODOS OS DIREITOS RESERVADOS © CROMO 2021</p>
+    </footer>
+    <!-- Fim rodape -->
+</body>
+
+<script src="js/jquery.js"></script>
+<script src="js/script.js"></script>
+<script src="js/galeria.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+    integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+    crossorigin="anonymous"></script>
+
+</html>

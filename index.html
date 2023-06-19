@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CROMO</title>
+    <link rel="shortcut icon" href="img/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+</head>
+
+<body>
+    <!-- Cabecalho -->
+    <header>
+        <nav class="navbar">
+            <ul class="menu-list">
+                <li><a href="index.html"><img src="./img/logo-maneira.png" alt="Logo Cromo"></a></li>
+                <li><a href="infraestrutura.html">Infraestrutura</a></li>
+                <li><a href="funcionario.html">Funcionários</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+            </ul>
+        </nav>
+        <nav class="navbar-mobile">
+            <a href="index.html"><img src="./img/logo-maneira.png" alt="Logo Cromo"></a>
+            <div class="dropdown">
+                <button class="dropbtn">Galeria</button>
+                <div class="dropdown-content">
+                    <a href="infraestrutura.html">Infraestrutura</a>
+                    <a href="funcionario.html">Funcionários</a>
+                    <a href="cursos.html">Cursos</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Fim cabecalho -->
+    <!-- Secao inicio -->
+    <section id="inicio" class="inicio">
+        <img src="img/Logo CROMO.svg" alt="logo cromo">
+        <a href="#inicio" class="up"> <img src="./img/DownArrow.svg" alt="subir"></a>
+    </section>
+    <!-- Fim secao inicio -->
+    <div class="divisao"></div>
+    <!-- Secao guia-paginas -->
+    <section style="width: 100%;" class="guia-paginas">
+        <!-- SLIDER com BOOTSTRAP -->
+        <div style="width: 100%;" id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div style="width: 100%;" class="carousel-inner">
+                <div style="width: 100%;" class="carousel-item active">
+                    <div style="width: 100%;" class="banner primeiro-banner">
+                        <div style="width: 100%;" class="container-grid conteudo-banner">
+                            <div style="width: 100%;" class="texto-banner">
+                                <a href="infraestrutura.html">Infraestrutura</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="width: 100%;" class="carousel-item">
+                    <div style="width: 100%;" class="banner segundo-banner">
+                        <div style="width: 100%;" class="container-grid conteudo-banner">
+                            <div style="width: 100%;" class="texto-banner">
+                                <a href="funcionario.html">Funcionários</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="width: 100%;" class="carousel-item">
+                    <div style="width: 100%;" class="banner terceiro-banner">
+                        <div style="width: 100%;" class="container-grid conteudo-banner">
+                            <div style="width: 100%;" class="texto-banner">
+                                <a href="cursos.html">Cursos</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fim do SLIDER -->
+    </section>
+    <!-- Fim secao guia-paginas -->
+    <div class="divisao"></div>
+    <!-- Secao projeto -->
+    <section id="projeto" class="projeto">
+        <div class="container-flex">
+            <div class="texto-projeto">
+                <h2>Projeto</h2>
+                <p> O Senai de Informática é jovem, como o espírito de seus funcionários, professores, alunos e
+                    estudantes. Do signo de Capricórnio, a escola realmente trabalha para que todos estejam
+                    conectados ao futuro. A instituição se destaca pela sua forma de comunicação, sua criatividade e
+                    seus relacionamentos, estando sempre de portas abertas e engajada em todas as potencialidades de
+                    desenvolvimento contínuo.</p>
+                <p>Nosso projeto visa ressaltar o perfil diferenciado do Senai Informática por meio de suas conexões
+                    - reais e virtuais - ressaltando seus dois principais ativos: as pessoas e a inovação por meio
+                    da tecnologia.</p>
+            </div>
+            <div class="img-projeto">
+                <img src="img/Senai - Logo Branco.svg" alt="logo senai">
+            </div>
+        </div>
+    </section>
+    <!-- Fim secao projeto -->
+    <div class="divisao"></div>
+    <!-- Secao cromo -->
+    <section id="cromo" style="position: relative;">
+        <div class="cromo container-flex">
+            <h2>A Cromo</h2>
+            <p> A Cromo é um grupo de alunos do curso técnico de multimídia, sendo eles: Alana Vitória, Carlos
+                Magno, Carol Queiroz, David Santos e Paulo Porto; com a finalidade de aplicar na prática as
+                habilidades e competências desenvolvidas durante o curso.
+            </p>
+            <p>Unindo as personalidades dos integrantes, a CROMO reflete a criatividade, a técnica, as percepções e
+                os olhares do grupo, ressaltando as conexões construídas no Senai Informática.
+            </p>
+        </div>
+    </section>
+    <!-- Fim secao cromo -->
+    <!-- Rodape -->
+    <footer>
+        <p>TODOS OS DIREITOS RESERVADOS © CROMO 2021</p>
+    </footer>
+    <!-- Fim Rodape -->
+</body>
+
+<!-- Scripts JavaScript e Bootstrap -->
+<script src="js/script.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+    integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+    crossorigin="anonymous"></script>
+
+</html>
